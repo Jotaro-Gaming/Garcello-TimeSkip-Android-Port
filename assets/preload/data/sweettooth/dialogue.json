@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Phew!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "That was TOUGH!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Man I'm beat!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beeeeep?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I guess I overdid it, huh?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beeep boop bo"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yeah, I can go for another"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Lets end things off with a bang little man!"
+		}
+	]
+}

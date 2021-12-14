@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "What's up, little man?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "What are you doing around these parts?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bee bop"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Looking for someone to rap battle?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep bo"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "defaultalt",
+			"text": "I guess I'm up for the task."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gardialogue",
+			"boxState": "normal",
+			"expression": "default",
+			"text": "Lets see what you got!"
+		}
+	]
+}
