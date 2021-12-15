@@ -48,8 +48,8 @@ class TitleState extends MusicBeatState
 
 	var wackyImage:FlxSprite;
 
-	var easterEggEnabled:Bool = true; //Disable this to hide the easter egg
-	var easterEggKeyCombination:Array<FlxKey> = [FlxKey.B, FlxKey.B]; //bb stands for bbpanzu cuz he wanted this lmao
+	//var easterEggEnabled:Bool = true; //Disable this to hide the easter egg
+	//var easterEggKeyCombination:Array<FlxKey> = [FlxKey.B, FlxKey.B]; //bb stands for bbpanzu cuz he wanted this lmao
 	var lastKeysPressed:Array<FlxKey> = [];
 
 	var mustUpdate:Bool = false;
@@ -76,7 +76,7 @@ class TitleState extends MusicBeatState
 		}
 		#end
 		
-		#if CHECK_FOR_UPDATES
+		/*#if CHECK_FOR_UPDATES
 		if(!closedState) {
 			trace('checking for update');
 			var http = new haxe.Http("https://raw.githubusercontent.com/ShadowMario/FNF-PsychEngine/main/gitVersion.txt");
@@ -98,7 +98,7 @@ class TitleState extends MusicBeatState
 			
 			http.request();
 		}
-		#end
+		#end*/
 
 		FlxG.game.focusLostFramerate = 60;
 		FlxG.sound.muteKeys = muteKeys;
@@ -212,13 +212,13 @@ class TitleState extends MusicBeatState
 			gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 			gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 		}
-		else //Psyka easter egg
+		/*else //Psyka easter egg
 		{
 			gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.04);
 			gfDance.frames = Paths.getSparrowAtlas('psykaDanceTitle');
 			gfDance.animation.addByIndices('danceLeft', 'psykaDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 			gfDance.animation.addByIndices('danceRight', 'psykaDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-		}
+		}*/
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
@@ -330,7 +330,7 @@ class TitleState extends MusicBeatState
 
 		// EASTER EGG
 
-		if (!transitioning && skippedIntro)
+		/*if (!transitioning && skippedIntro)
 		{
 			if(pressedEnter)
 			{
@@ -396,7 +396,7 @@ class TitleState extends MusicBeatState
 					}
 				}
 			}
-		}
+		}*/
 
 		if (pressedEnter && !skippedIntro)
 		{
@@ -467,12 +467,11 @@ class TitleState extends MusicBeatState
 			switch (sickBeats)
 			{
 				case 1:
-					createCoolText(['Psych Engine by'], 45);
+					createCoolText(['Psych Engine port by'], 45);
 				// credTextShit.visible = true;
 				case 3:
-					addMoreText('Shadow Mario', 45);
-					addMoreText('RiverOaken', 45);
-				// credTextShit.text += '\npresent...';
+					addMoreText('Jigsaw', 45);
+				        addMoreText('He presents', 45);
 				// credTextShit.addText();
 				case 4:
 					deleteCoolText();
@@ -480,9 +479,9 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 5:
-					createCoolText(['This is a mod to'], -60);
+					createCoolText(['This psych engine port'], -60);
 				case 7:
-					addMoreText('This game right below lol', -60);
+					addMoreText('drink milk', -60);
 					logoSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 8:
@@ -499,18 +498,19 @@ class TitleState extends MusicBeatState
 					addMoreText(curWacky[1]);
 				// credTextShit.text += '\nlmao';
 				case 12:
-					deleteCoolText();
+					addMoreText(curWacky[2]);
 				// credTextShit.visible = false;
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Friday');
+					deleteCoolText();
+					addMoreText('FNF');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Night');
+					addMoreText('PSYCH');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('ENGINE'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();
